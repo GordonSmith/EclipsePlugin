@@ -30,8 +30,7 @@ import org.hpccsystems.internal.data.Platform;
 
 public class ECLLaunchShortcutLocal implements ILaunchShortcut2 {
 	
-	@Override
-	public void launch(ISelection selection, String mode) {
+	public void launchXXX(ISelection selection, String mode) {
 	}
 
 	@Override
@@ -82,6 +81,42 @@ public class ECLLaunchShortcutLocal implements ILaunchShortcut2 {
 		if (input != null) {
 			return input.getFile();
 		}
+		return null;
+	}
+
+	@Override
+	public void launch(ISelection selection, String mode) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void launch(IEditorPart editor, String mode) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ILaunchConfiguration[] getLaunchConfigurations(ISelection selection) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ILaunchConfiguration[] getLaunchConfigurations(IEditorPart editorpart) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IResource getLaunchableResource(ISelection selection) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IResource getLaunchableResource(IEditorPart editorpart) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 }
