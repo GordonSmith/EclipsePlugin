@@ -53,6 +53,7 @@ import org.eclipse.ui.part.MultiPageEditorPart;
 import org.eclipse.ui.views.contentoutline.IContentOutlinePage;
 import org.hpccsystems.eclide.Activator;
 import org.hpccsystems.eclide.builder.meta.ECLDefinition;
+import org.hpccsystems.eclide.builder.meta.ECLMetaTree.ECLMetaNode;
 import org.hpccsystems.eclide.ui.viewer.ECLContentOutlinePage;
 import org.hpccsystems.eclide.ui.viewer.platform.PlatformActions;
 import org.hpccsystems.eclide.ui.viewer.platform.TreeItemOwner;
@@ -264,9 +265,9 @@ public class ECLWindow extends MultiPageEditorPart implements IResourceChangeLis
 						ISelection selection = event.getSelection();
 						if (selection != null && selection instanceof TreeSelection) {
 							Object o = ((TreeSelection)selection).getFirstElement();
-							if (o != null && o instanceof ECLDefinition) {
-								ECLDefinition def = (ECLDefinition)o;
-								editor.setHighlightRange(def.getOffset(), def.getLength(), true);
+							if (o != null && o instanceof ECLMetaNode) {
+								ECLMetaNode node = (ECLMetaNode)o;
+								editor.setHighlightRange(node.getData().getOffset(), node.getData().getLength(), true);
 							}
 						}
 					}
