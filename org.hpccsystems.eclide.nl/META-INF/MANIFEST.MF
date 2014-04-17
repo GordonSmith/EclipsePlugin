@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Nl
+Bundle-SymbolicName: org.hpccsystems.eclide.nl
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: HPCCSystems
+Fragment-Host: org.hpccsystems.eclide;bundle-version="4.3.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Localization: src/org/hpccsystems/eclide/resources/messages
